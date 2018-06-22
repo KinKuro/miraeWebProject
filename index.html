@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index_mobile.css" media="(max-width:768px)">
+	<link rel="stylesheet" type="text/css" href="index.css" media="(min-width:768px)">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://malsup.github.com/jquery.cycle2.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<div id="main">
+		<header>
+			<div id="logo">
+				<a href="index.html"><img src="imgs/logo.png"></a>
+			</div>
+	
+			<nav id="links">
+				<ul>
+					<li><a href="china.html">CHINA</a></li>
+					<li><a href="greece.html">GREECE</a></li>
+					<li><a href="japan.html">JAPAN</a></li>
+					<li><a href="vietnam.html">VIETNAM</a></li>
+					<li><a href="korea.html">KOREA</a></li>
+				</ul>
+			</nav>
+
+			<div id="right">
+				<ul>
+					<li><a href="login.html">LogIn</a></li>
+					<li><a href="register.html">Register</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<article>
+			<div id="slide" class="cycle-slideshow"
+					data-cycle-fx=scrollHorz
+					data-cycle-timeout=2000>
+				<img src="imgs/slide_china.jpg">
+				<img src="imgs/slide_greece.jpg">
+				<img src="imgs/slide_japan.jpg">
+				<img src="imgs/slide_vietnam.jpg">
+				<img src="imgs/slide_korea.jpg">
+			</div>
+
+			<div id="btns">
+				<ul>
+					<li><a href="china.html"><img src="imgs/button_china.png"></a></li>
+					<li><a href="greece.html"><img src="imgs/button_greece.png"></a></li>
+					<li><a href="japan.html"><img src="imgs/button_japan.png"></a></li>
+					<li><a href="vietnam.html"><img src="imgs/button_vietnam.png"></a></li>
+					<li><a href="korea.html"><img src="imgs/button_korea.png"></a></li>
+				</ul>
+			</div>		
+		</article>
+
+		<footer>
+			<p>
+				<a href="about.html">사이트 정보</a>
+				<a href="login.html" class="mobile_hidden">로그인</a>
+				<a href="register.html" class="mobile_hidden">회원가입</a>
+			</p>
+		</footer>
+	</div>
+</body>
+</html>
