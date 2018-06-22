@@ -1,0 +1,203 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+*{border: 1px solid red; }
+body{
+	font-family: "Sans-serif";
+	font-size:17px;
+	
+}
+/*바디섹션 스타일 주기*/
+
+#div_main{
+	display: block;
+	max-width: 1180px;
+	margin:0 auto;
+}
+
+/*헤더는 인라인요소*/
+header{
+	padding-top: 30px;
+	background-color: green;
+	height: 90px;
+
+
+	/*border:2px solid blue;윤곽확인작업*/
+}
+
+#div_logo{
+	float:left;
+	margin-left: 50px; 
+	width: 50px;
+	height: 100px;
+}	
+	
+#navi_menu{
+	float: left;
+}
+
+#navi_menu li{
+	display: inline;
+	margin: 5px; 
+	margin-left: 100px;
+}
+
+#navi_menu li a{
+	text-decoration: none;
+	color: black;
+
+}
+
+#div_login{
+	float: right;
+	margin-left: : 100px;
+	padding-left: 100px;
+}
+
+#div_login a{
+	margin: 5px;
+	color: #000000;
+}
+/*헤더 종료*/
+
+/*섹션*/
+
+#p_main{
+	background-color: blue;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+#p_vietnam{
+	display: inline;
+	text-align: center;
+	font-size: :36px;
+	color: white;
+	bottom: 30px;
+	text-align: center;
+	vertical-align:center;
+	
+}
+
+#p_history{
+	display: inline;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	bottom: : 30px;
+	text-align: center;
+	vertical-align:center;
+
+}
+
+/*섹션종료 */
+
+/*사이드메뉴바*/
+aside{
+	float: left;
+	margin-left: 40px;
+	padding-top: :80px;
+	width: 300px;
+	height: 600px; 
+	background-color: green;
+	
+}
+
+aside ul{
+	margin-bottom: 50px;
+	padding-top: 50px;
+	}
+
+aside ul li{
+	
+	margin-left: 90px;
+	
+}
+
+aside ul li a{
+	text-decoration: none;
+	color: black;
+	width: 150px;
+	height: 50px;
+
+}
+/*어사이드 종료*/
+
+/*섹션 아티클 라이트*/
+section{
+	float:right;
+	width:60%;
+
+}
+
+.items{
+	display: inline-block;
+	height: 150px;
+}
+
+
+.items img{
+	display: block;
+}
+
+hr{
+	clear: both;
+}
+
+
+
+footer{
+	width 100%;
+	height: 200%;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+	text-decoration: none;
+
+}}
+
+
+
+
+
+footer button{
+	width 100%;
+	height: 200%;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+	text-decoration: none;
+
+}
+
+}
+
+
+footer a{
+	width 100%;
+	height: 200%;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+	text-decoration: none;
+
+}
