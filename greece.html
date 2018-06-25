@@ -8,31 +8,42 @@
 	<script type="text/javascript">
 
 		function loaded(){
-			$('nav .menu').click(function(){
-				if($(".menu li:first").is(":hidden")){
-					$(".menu li").slideDown("slow");
-				}else{
-					$(".menu li").slideUp("slow");
-				}
-			})
+			
+			$('#target').load('detail.html');
+
+			// $('nav .menu').click(function(){
+			// 	if($(".menu li:first").is(":hidden")){
+			// 		$(".menu li").slideDown("slow");
+			// 	}else{
+			// 		$(".menu li").slideUp("slow");
+			// 	}
+			// })
 		}
 
+		document.getElementsByClassName('body').addEventListener("wheel", wheelFunction);
+
+			function wheelFunction(){
+				document.getElementsByClassName('nav').style="position:fixed";
+			}
+
+
+		
 	</script>
 </head>
-<body onload="loaded()">
+<body onload="loaded()" class="body">
 
 	<div class="main">
 		<header>
 		<div class="headerContainer">
 			<div class="logo">
-				<img src="../Day01/thumbnail/rolex.jpg">
+				<img src="images/logo/rolex.jpg">
 			</div>
 			<div class="contryContainer">
 				<div class="contry">
-					<a href="#" id="china">중국</a>
-					<a href="#" id="greece">그리스</a>
-					<a href="#" id="japan">일본</a>
-					<a href="#" id="vietnam">베트남</a>
+					<a href="#" id="china">중국</a>&nbsp;&nbsp;
+					<a href="#" id="greece">그리스</a>&nbsp;&nbsp;
+					<a href="#" id="japan">일본</a>&nbsp;&nbsp;
+					<a href="#" id="vietnam">베트남</a>&nbsp;&nbsp;
 					<a href="#">한국</a>
 					
 				</div>	
@@ -43,21 +54,18 @@
 				<button>회원가입</button>
 			</div>	
 		</div>
-		
 		</header>
 
 		<nav class="nav">
-			<div class="menu">
-				<a href="#">메뉴</a>
-				<ul>
-					<li><a href="#" id="info1">정보</a></li>
-					<li><a href="#" id="info2">가볼만한곳</a></li>
-					<li><a href="#" id="info3">맛집</a></li>
-					<li><a href="#" id="info4">야경</a></li>
-				</ul>
-			</div>
+			<a href="#">관광지</a>
+			<a href="#">호텔</a>
+			<a href="#">문화</a>
 		</nav>
 
+		<div class="contryFlag">
+			<img src="images/flag/greeceFlag.jpg">
+			<p>Greece | 신들의 도시</p>
+		</div>
 		
 		<div class="slideshow-container">
 
@@ -106,7 +114,7 @@
 		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 		</div>
-		<br>
+		
 
 		<!-- The dots/circles -->
 		<div style="text-align:center">
@@ -152,11 +160,11 @@
 
 		</script>
 
+		<br><br><br>
+
 		<article class="boardBackGround">
 			<section class="boardContainer">
-				<iframe src="" id="boradContent">
-					iframe
-				</iframe>
+				<div id="target"></div>
 			</section>
 		</article>
 

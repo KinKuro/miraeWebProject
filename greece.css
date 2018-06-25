@@ -15,8 +15,9 @@ body>.main{
 header{
 	text-align: center;
 	padding: 30px;
-	line-height: 100px;
+	line-height: 50px;
 	vertical-align: middle;
+  background-color: #002187;
 }
 
 header .logo{
@@ -35,7 +36,11 @@ header .logo{
 
 header .contryContainer{
 	display: inline-block;
-	background-color: red;
+}
+
+header a{
+  color: white;
+  letter-spacing: 2px;
 }
 
 header .login{
@@ -46,11 +51,44 @@ header .logo>img{
 	width: 100px;
 }
 
-nav{
-	clear: both;
-	position: fixed;
-	
+.contryFlag{
+  width: 100%;
+  height: 200px;
+  background-color: #003399;
+}
+.contryFlag>img{
+  height: 200px;
+  float: left;
+}
 
+.contryFlag>p{
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  font-size: 3em;
+}
+
+nav{
+	overflow: hidden;
+  background-color: #333;
+  position: relative;
+  top: 0;
+  max-width: 1180px;
+  width: 100%;
+  z-index: 1;
+}
+
+nav a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+nav a:hover{
+  background: #ddd;
+  color: black;
 }
 
 nav ul{
@@ -63,7 +101,7 @@ nav li{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1180px;
   position: relative;
   margin: auto;
 }
@@ -151,4 +189,8 @@ nav li{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+#target{
+  width: 100%;
 }

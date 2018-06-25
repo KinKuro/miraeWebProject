@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.img{
+	width: 1180px;
+	height: 395px;
+	background-color: lightgray;
+}
+
+
+.img img{
+	float: left;
+}
+
+.img #big{
+	width: 50%;
+	height: 100%;
+}
+
+.img #small{
+	width: 25%;
+	height: 50%;
+}
+
+
+.img #name{
+	color: black;
+	position: absolute;
+	font-size: 2em;
+	margin: 20px;
+
+}
