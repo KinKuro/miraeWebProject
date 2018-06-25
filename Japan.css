@@ -25,6 +25,8 @@ li { list-style: none }
 
 		#header-logo{
 			float:left;
+            margin-left: 5px;
+
 		}
 
 		#header{
@@ -58,24 +60,9 @@ li { list-style: none }
 			aside#left *{margin:0; padding:0;}
 			aside#left h4{margin:10px;}
 			aside#left li{text-align:center;}
-			aside#left li:hover{background-color:lightgray;}
+			aside#left li:hover{background-color:#dddddd;}
 			aside#left a{font-size: 20pt;}
-
-		nav{
-			background-color: red;
-			padding: 20px;
-			display: table-cell;
-		}
-
-		article{
-			display: table-cell;
-			background-color: white;
-			padding: 15px;
-			width: 50%;
-		}
-
-	
-
+            aside#left ul {margin-right: 20px;}	
 
 	.d2program_box {
             position: relative;
@@ -100,9 +87,8 @@ li { list-style: none }
 
         .img {
             vertical-align:top;
-            width: 150px;
-            height: 150px;
-            margin-bottom: 30px;
+            height: 180px;
+            margin-bottom: 20px;
             object-fit: contain;
         }
 
@@ -119,7 +105,7 @@ li { list-style: none }
 
         .d2program_textbox {
             display: block;
-            margin: 20px auto 0;
+            margin: 15px auto 0;
             width: 390px;
             text-align: center;
             color: black;
@@ -152,44 +138,145 @@ li { list-style: none }
         .h_page_area {
             margin-bottom: 40px;
         }
+        
+    footer{
+        width:100%;
+        clear: both;
+        background:red;
+        font-size:32pt;
+        text-align: center;
+    }
+    footer p {
+        display: inline-block;
+        line-height: 40px;
+        vertical-align: middle;
+    }
 
-        @media screen and (max-width: 1168px) {
-            .d2program_box {
-                width: 100%;
-                height: 450px;
-                min-width: 298px;
-                max-width: 418px;
-            }
-            .img {
-                width: 100%;
-                height: auto;
-            }
-            .content_box {
-                padding: 0 10px 84px;
-            }
+    footer a{font-size: 32px; color: white;}
+
+        @media screen and (max-width: 1260px) { /* Tablet 1 */
+            #main {max-width: 950px;}
+
+            header {width: 940px;}
+            #menu {width: 910px; font-size: 32pt;}
+            footer {width: 940px;}
+
+            .d2program_box {width: 298px; height: 320px;}
+            .img {height: 130px; margin-bottom: 10px;}
+            .content_box {width: 100%;}
+            .content_box .Posts_title {font-size: 13pt;}
             .d2program_textbox {
                 width: 100%;
+                font-size: 11pt;
+                margin: 10px 0;
+            }
+            .button_box {bottom: 10px;}
+            .d2program_button {
+                width: 110px;
+                height: 25px;
+                font-size: 13px;
+                line-height: 25px;
             }
         }
 
-        @media screen and (max-width: 640px) {
+        @media screen and (max-width: 980px) { /* Tablet 2 */
+            #main {max-width: 670px;}
+
+            header {width: 670px;}
+            #menu {width: 640px; font-size: 24pt;}
+            footer {width: 670px;}
+
+            aside#left {
+                width: 99.8%;
+                height: 208px;
+                margin: 30px 0;
+                border: 1px solid black;
+            }
+            aside#left h4 {
+                text-align: center;
+                height: 40px;
+                font-size: 21px;
+                line-height: 40px;
+                margin: 0;
+                background-color: #eeeeee;
+            }
+            aside#left ul {margin-right: 0; height: 360px;}
+            aside#left a {font-size: 16pt;}
+            aside#left li {
+                display: inline-block;
+                height: 42px;
+                width: 49.5%;
+                line-height: 42px;
+            }
+            aside#left li:nth-of-type(2n-1) {border-right: 1px solid black;}
+            aside#left p {display: none;}
+
+            #main > ul {padding-left: 0;}
+            .d2program_box {width: 298px; height: 320px;}
+            .d2program_box:nth-child(2n-1) {margin-right: 70px;}
+            .img {height: 130px; margin-bottom: 10px;}
+            .content_box {width: 100%;}
+            .content_box .Posts_title {font-size: 13pt;}
+            .d2program_textbox {
+                width: 100%;
+                font-size: 11pt;
+                margin: 10px 0;
+            }
+            .button_box {bottom: 10px;}
+            .d2program_button {
+                width: 110px;
+                height: 25px;
+                font-size: 13px;
+                line-height: 25px;
+            }
+        }
+
+        @media screen and (max-width: 720px) { /* Mobile */
+            body {margin: 0;}
+
+            #main {max-width: initial;}
+
+            header {
+                width: 100%;
+                margin: 0 auto;
+            }
+            #header2_div{display: none;}
+            #menu {
+                width: 100%;
+                font-size: 20pt;
+                position: relative;
+                top: -27px;
+                border: 0;
+                padding: 0;
+                height: 109px;
+                line-height: 109px;
+            }
+            footer {width: 100%;}
+
+            #Login{display: none;}
+            
+            aside#left {
+                width: calc(100% - 2px);
+                height: 335px;
+                margin-top: 3px;
+            }
+            aside#left li {display: block; width: 100%;}
+            aside#left li:nth-of-type(2n-1) {
+                border-right: none;
+            }
+
             .d2program_box {
-                height: 100%;
+                width: calc(100% - 2px);
+                height: auto;
+            }
+            .d2program_box .img {width: 100%; height: auto; margin-bottom: 20px;}
+            .content_box .Posts_title {font-size: 18pt;}
+            .d2program_textbox {margin-top: 30px; font-size: 15pt;}
+            .button_box {position: initial; margin-top: 20px;}
+            .button_box a {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
             }
         }
-	footer{
-		
-    	width:100%;
-    	clear: both;
-    	background:red;
-    	font-size:32pt;
-    	text-align: center;
-
-	}
-	footer p {
-		display: inline-block;
-		line-height: 40px;
-		vertical-align: middle;
-	}
-
-	footer a{font-size: 32px; color: white;}
