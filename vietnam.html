@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>application</title>
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="vietnam.css">
+
+	<style type="text/css">
+		@keyframes slidy{
+			0%{ left : 0%; }
+			10%{ left : 0%; }
+			20%{ left : -100%; }
+			30%{ left : -100%; }
+			40%{ left : -200%; }
+			50%{ left : -200%; }
+			60%{ left : -300%; }
+			70%{ left : -300%; }
+			80%{ left : -300%; }
+			90%{ left :-300%; }
+			100%{ left : -400%; }
+		}
+		/*슬라이드 스타일 주기*/
+		/**{margin:0; padding:0px;}*/
+		body{margin:0; padding: 0;}
+		
+		div#slider {overflow:hidden;}
+		div#slider figure img{width:11%; float:left; }
+
+		div#slider figure{
+			position:relative;
+			width:300%;	height:100px;
+			margin:0;
+			top:0;	left:0%;
+			text-align:left;
+			font-size:0;
+			animation:12s slidy ease-in-out infinite;
+		}
+	</style>
+</head>
+
+ <body>
+
+ 	<div id="div_main">
+	    <header>
+
+		  <div id="div_logo">
+			 <img id="logo" src="img/logo.jpg" width="100" heigth="50">
+	 	  </div>
+	 	
+	 	  <nav id="navi_menu">
+			
+			 <ul class="class_ul">
+				<li><a href="">중국</a></li>
+				<li><a href="">그리스</a></li>
+				<li><a href="">일본</a></li>
+				<li><a href="">베트남</a></li>
+	 			<li><a href="">한국</a></li>
+			 </ul>
+		   	
+		   </nav> <!--  navi_menu -->
+			
+		    <div id="div_login">
+			
+			   <a href="">로그인</a>
+			   <a href="">회원가입</a>
+		    </div>	<!--dive_login -->	
+		
+    	</header>	
+	
+			<!-- <div id="p_main">
+				<span id="p_vietnam"><strong>베트남 |<strong>
+				<span id="p_history"><strong>1000년의 역사</strong></span>	
+			</div> --> 
+			<!-- 가운데글자넣기 끝 -->
+
+		<div id="slider">
+		<figure>
+			<img src="img/01.jpg" alt="01">
+			<img src="img/02.jpg" alt="02">
+			<img src="img/03.jpg" alt="03">
+			<img src="img/04.jpg" alt="04">
+			<img src="img/05.jpg" alt="05">
+		</figure>
+		<!-- <span id="p_vietnam">베트남 |1000년의 역사<strong>
+				<span id="p_history"><strong>1000년의 역사</strong></span> -->
+		<p>< 베트남 천년의 역사 ></p>
+		</div>
+		<aside>
+		
+				<ul>
+					<li><a href="">나트랑</a></li> 
+					<li><a href="">하노이</a></li>
+					<li><a href="">호치민</a></li>
+				</ul>	
+		</aside>
+			<section>
+					<div class="items">
+						<img src="img/01.jpg" width="150px" height="150px">
+						<h3>호치민</h3><br>
+						<p>sdsd</p>
+					</div>	
+					
+					<div class="items">
+						<img src="img/02.jpg" width="150px" height="150px">
+						<h3>나트랑</h3><br>
+						<p>sdadsad</p>
+					</div>	
+
+					
+					<div class="items">
+						<img src="img/03.jpg" width="150px" height="150px">
+						<h3>하노이</h3><br>
+						<p>sadsadsad</p>
+
+					</div>
+					
+					<div class="items">
+						<img src="img/04.jpg" width="150px" height="150px">		
+						<h3>호치민</h3><br>
+						<p>sadadsad</p>
+
+					</div>	
+			</section>
+			
+			<article>
+			
+					
+					<div class="class_title">
+						<img class="class_vietnam"src="img/vietnam.jpg">
+						<ul class="list">
+							<li>
+							 	<div class="subject"><여행일정과 여행경비안내..</div>
+							 	<div class="date>2019-09-20"></div>
+							 	<div class="clear"</div>
+							</li>
+								
+							<li>	
+								<div class="subject"><여행일정과 여행경비 안내..</div>
+							 	<div class="date>2019-09-20"></div>
+							 	<div class="clear"</div>
+							</li>
+
+							<li>
+							 	<div class="subject"><여행일정과 여행경비 안내..</div>
+							 	<div class="date>2019-09-20"></div>
+							 	<div class="clear"</div>
+						    </li>	
+						</ul>
+					</div>		 
+			    	  	
+			</article>
+
+
+		<hr>
+	<footer>
+			<a href="">만든 사람들</a>
+			 
+	</footer>
+	</div>	<!--섹션 div종료 -->
+</body>
+ 
+	
+
+</html>
