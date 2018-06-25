@@ -1,0 +1,111 @@
+
+a {text-decoration: none; color:black;}
+li { list-style: none }
+
+#main{
+    display:block;
+    max-width:1180px;
+    margin:0 auto;
+    }       
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        #menu{
+            background-color: red;
+            border: 5px solid red;
+            padding: 5px 10px;
+            font-size: 36pt;
+            color: white;
+            text-align: center;
+        }
+
+        #header-logo{
+            float:left;
+        }
+
+        #header{
+            width: 50%;
+            height: 90px;
+            font-size: 16pt;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #header2_div{
+            display:inline;
+            text-align: right;
+        }
+        #header2{
+            font-size:16pt;
+        }
+
+        .img{
+            width: 500px;
+            height: 500px;
+        }        
+        
+    footer{
+        
+        width:100%;
+        clear: both;
+        background:red;
+        font-size:32pt;
+        text-align: center;
+
+    }
+    footer p {
+        display: inline-block;
+        line-height: 40px;
+        vertical-align: middle;
+    }
+
+    footer a{font-size: 32px; color: white;}
+
+    @media screen and (max-width: 1260px) { /* Tablet 1 */
+            #main {max-width: 950px;}
+            header {width: 940px;}
+            #menu {width: 910px; font-size: 32pt;}
+            footer {width: 940px;}
+            .img {height: 130px; margin-bottom: 10px;}
+            
+        }
+
+         @media screen and (max-width: 980px) { /* Tablet 2 */
+            #main {max-width: 670px;}
+            header {width: 670px;}
+            #menu {width: 640px; font-size: 24pt;}
+            footer {width: 670px;}
+            #main > ul {padding-left: 0;}
+            .img {height: 130px; margin-bottom: 10px;}
+        }
+
+        @media screen and (max-width: 720px) { /* Mobile */
+            body {margin: 0;}
+
+            #main {max-width: initial;}
+
+            header {
+                width: 100%;
+                margin: 0 auto;
+            }
+            #header2_div{display: none;}
+            #menu {
+                width: 100%;
+                font-size: 20pt;
+                position: relative;
+                top: -27px;
+                border: 0;
+                padding: 0;
+                height: 109px;
+                line-height: 109px;
+            }
+            footer {width: 100%; }
+            #Login{display: none;}
+            .d2program_box .img {width: 100%; height: auto; margin-bottom: 20px;}
+        }
