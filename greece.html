@@ -11,6 +11,16 @@
 			
 			$('#target').load('detail.html');
 
+			window.onscroll=function(){scrollFunction()};
+
+			function scrollFunction(){
+				if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+					document.getElementById("navbar").style.top="0";
+				}else{
+					document.getElementById("navbar").style.top="-50px";
+				}
+			}
+
 			// $('nav .menu').click(function(){
 			// 	if($(".menu li:first").is(":hidden")){
 			// 		$(".menu li").slideDown("slow");
@@ -20,23 +30,21 @@
 			// })
 		}
 
-		document.getElementsByClassName('body').addEventListener("wheel", wheelFunction);
-
-			function wheelFunction(){
-				document.getElementsByClassName('nav').style="position:fixed";
-			}
-
-
-		
 	</script>
 </head>
 <body onload="loaded()" class="body">
 
 	<div class="main">
+		<nav id="navbar">
+			<a href="#">관광지</a>
+			<a href="#">호텔</a>
+			<a href="#">문화</a>
+		</nav>
+
 		<header>
 		<div class="headerContainer">
 			<div class="logo">
-				<img src="images/logo/rolex.jpg">
+				<a href="index.html">Trevel</a>
 			</div>
 			<div class="contryContainer">
 				<div class="contry">
@@ -56,11 +64,7 @@
 		</div>
 		</header>
 
-		<nav class="nav">
-			<a href="#">관광지</a>
-			<a href="#">호텔</a>
-			<a href="#">문화</a>
-		</nav>
+		
 
 		<div class="contryFlag">
 			<img src="images/flag/greeceFlag.jpg">
