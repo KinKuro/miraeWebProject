@@ -72,10 +72,11 @@ header .logo>img{
 nav{
   background-color: #555555;
   position: fixed;
-  top: -50px;
   width: 100%;
+  top: -50px;
   max-width: 1180px;
   display: block;
+  z-index: 1;
   transition: top 0.3s;
 }
 
@@ -90,14 +91,6 @@ nav a{
 nav a:hover{
   background: #ddd;
   color: black;
-}
-
-nav ul{
-	display: inline;
-}
-
-nav li{
-
 }
 
 /* Slideshow container */

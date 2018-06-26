@@ -10,17 +10,8 @@
 		function loaded(){
 			
 			$('#target').load('detail.html');
-
+			
 			window.onscroll=function(){scrollFunction()};
-
-			function scrollFunction(){
-				if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
-					document.getElementById("navbar").style.top="0";
-				}else{
-					document.getElementById("navbar").style.top="-50px";
-				}
-			}
-
 			// $('nav .menu').click(function(){
 			// 	if($(".menu li:first").is(":hidden")){
 			// 		$(".menu li").slideDown("slow");
@@ -30,11 +21,24 @@
 			// })
 		}
 
+		function scrollFunction(){
+			if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+				document.getElementById("navbar").style.top="0";
+			}else{
+				document.getElementById("navbar").style.top="-50px";
+			}
+		}
+
+		
+
 	</script>
 </head>
-<body onload="loaded()" class="body">
+<body onload="loaded()" id="bo">
+
+
 
 	<div class="main">
+
 		<nav id="navbar">
 			<a href="#">관광지</a>
 			<a href="#">호텔</a>
@@ -44,7 +48,7 @@
 		<header>
 		<div class="headerContainer">
 			<div class="logo">
-				<a href="index.html">Trevel</a>
+				<img src="images/logo/rolex.jpg">
 			</div>
 			<div class="contryContainer">
 				<div class="contry">
@@ -63,8 +67,6 @@
 			</div>	
 		</div>
 		</header>
-
-		
 
 		<div class="contryFlag">
 			<img src="images/flag/greeceFlag.jpg">
