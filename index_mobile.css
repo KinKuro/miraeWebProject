@@ -7,38 +7,38 @@ div#main{
 	min-width:360px
 }
 
-.mobile_hidden{
-	visibility:hidden;
-}
-
 /*header*/
 header{
 	background-color:lightgreen;
-	width:100%; height:100px;
+	width:100%;
 	text-align:center;
 }
 	header #logo{
+		margin:5px 0;
 		display:inline-flex;
 		align-items: center;
 	}
-	header #links{
-		visibility:hidden;
-	}
-	header #links ul{
-		visibility:hidden;
-		overflow:hidden;
+	header nav#links ul{
 	}
 		header #links li{
-			margin:0 10px;
+			width:100%;
+			height:30px;
+			background-color:green;
+		}
+		header #links li:hover{
+			background-color:lightgreen;
 		}
 		header #links a{
 			font-size:16pt;
 		}
 	header #right{
-
+		visibility:hidden;
 	}
 		header #right a{
-			font-size:12pt;
+			font-size:0px;
+		}
+		header #right ul, header #right li{
+			
 		}
 
 /*article*/
@@ -69,14 +69,23 @@ article{
 /*footer*/
 footer{
 	background-color:skyblue;
-	width:100%;	height:150px;
-	line-height:150px;
+	width:100%;	
 	text-align:center;
 }
-	footer p{
-		display: inline-block;
-		text-align:center;
+	footer li{
+		margin:10px 0;
 	}
-	footer a{
-		font-size:32px;
+	footer li:hover{
+		background-color:blue;
 	}
+
+		footer li p{
+			display: inline-block;
+			text-align:center;
+		}
+		footer li a{
+			font-size:24px;
+		}
+		footer li a:hover{
+			color:white;
+		}

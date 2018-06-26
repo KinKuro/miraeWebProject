@@ -17,6 +17,7 @@ div#main{
 /*header*/
 header{
 	background-color:lightgreen;
+	margin-top:10px;
 	display: flex;	/*정렬 준비작업*/
 	flex-direction: row;	/*요소들을 한 줄로*/
 	justify-content: space-around;	/*요소들 사이에 간격을 일정하게*/
@@ -30,7 +31,7 @@ header{
 	header #links ul{
 	}
 		header #links li{
-			margin:0 10px;
+			margin:0 5px;
 		}
 		header #links a{
 			font-size:16pt;
@@ -80,5 +81,7 @@ footer{
 		vertical-align: middle;
 	}
 	footer a{
+		display: inline-block;
+		margin:0px 20px;
 		font-size:32px;
 	}
