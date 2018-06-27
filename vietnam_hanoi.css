@@ -77,3 +77,13 @@ section#right #summary2 .buttons li{
 	text-decoration: none;
 } 
 /*옵션영역*/
+
+section#right #explanation h3{
+	/*clear: both;*/
+	position: relative;
+	font-size: 16px;
+	padding-bottom: 12px;
+	margin-top:30px;
+	border-bottom:solid 1px #444444;
+	color:#80a727; 
+}
