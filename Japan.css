@@ -47,6 +47,10 @@ li { list-style: none }
 			font-size:16pt;
 		}
 
+        #wrapper{
+            display: none;
+        }
+
 	
 
 		aside#left{
@@ -240,6 +244,13 @@ li { list-style: none }
                 width: 100%;
                 margin: 0 auto;
             }
+            nav ul {
+              text-align: center;
+              font-size: 20px;
+              text-align: justify;
+            }
+
+            #header{display: none;}
             #header2_div{display: none;}
             #menu {
                 width: 100%;
@@ -251,10 +262,21 @@ li { list-style: none }
                 height: 109px;
                 line-height: 109px;
             }
-            footer {width: 100%;}
-
             #Login{display: none;}
+            .menuBtn {
+                display: block;
+                line-height: 85px;
+                text-align: right;
+                padding-right: 20px;
+                cursor: pointer;
+            }
+            .menuBtn img {
+                width: 100px; height: 50px;
+                position: relative;
+                top: 16px;
+            }
             
+            footer {width: 100%;}
             aside#left {
                 width: calc(100% - 2px);
                 height: 335px;
