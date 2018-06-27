@@ -18,7 +18,15 @@ header{
 		display:inline-flex;
 		align-items: center;
 	}
+	header #menu{
+		position:absolute;
+		top:25px; right:10px;
+		width:; height:;
+		visibility: visible;
+	}
 	header nav#links ul{
+		
+		overflow:hidden;
 	}
 		header #links li{
 			width:100%;
@@ -33,6 +41,7 @@ header{
 		}
 	header #right{
 		visibility:hidden;
+		height:0px;
 	}
 		header #right a{
 			font-size:0px;

@@ -28,7 +28,12 @@ header{
 	header #links{
 		padding : 10px;
 	}
+	header #menu{
+		width:0px; height:0px;
+		visibility:hidden;
+	}
 	header #links ul{
+		visibility: visible;
 	}
 		header #links li{
 			margin:0 5px;
@@ -37,11 +42,11 @@ header{
 			font-size:16pt;
 		}
 	header #right{
-
 	}
 		header #right a{
 			font-size:12pt;
 		}
+
 
 /*article*/
 article{
