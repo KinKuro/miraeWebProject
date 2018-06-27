@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	var mql = matchMedia("(max-width:768px)");
+	var mql = matchMedia("(max-width:785px)");
 
 	mql.addListener(function(e){
 		if(e.matches){
@@ -8,8 +8,7 @@ $(document).ready(function(){
 		}else{
 			$('header #links ul').show();
 		}
-	});
-	
+	});	
 
 	$('header #menu').on('click', function(){
 		$('header #links ul').slideToggle('fast');

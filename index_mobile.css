@@ -24,8 +24,7 @@ header{
 		width:; height:;
 		visibility: visible;
 	}
-	header nav#links ul{
-		
+	header nav#links ul{		
 		overflow:hidden;
 	}
 		header #links li{
@@ -46,8 +45,7 @@ header{
 		header #right a{
 			font-size:0px;
 		}
-		header #right ul, header #right li{
-			
+		header #right ul, header #right li{			
 		}
 
 /*article*/
