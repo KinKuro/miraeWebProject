@@ -3,11 +3,23 @@
 <head>
 	<title>Japan</title>
 	<meta charset="utf-8">
-
-	<link rel="stylesheet" type="text/css" href="Tsushima.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Tsushima.css">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 </head>
+	<script type="text/javascript">
+	        jQuery(document).ready(function($) {
+	            // hide the menu when the page load
+	            $("#navigation-list").hide();
+	            // when .menuBtn is clicked, do this
+	            $(".menuBtn").click(function() {
+	                // open the menu with slide effect
+	                $("#navigation-list").slideToggle(300);
+	            });
+	        });
+	    </script>
 
 <body id="">
 	<div id="main">
@@ -31,7 +43,18 @@
 			<a href="register.html" id="header2">회원가입</a>
 		</div>
 
-
+		<div class="wrapper">
+             <span class="menuBtn"><img src="icon.svg" alt="Menu icon"></span>
+                <nav id="navigation-list">
+                  	<ul>
+                        <li><a id="list" href="china.html">중국</a></li>
+                        <li><a id="list"href="greece.html">그리스</a></li>
+                        <li><a id="list" href="japan.html">일본</a></li>
+                        <li><a id="list" href="vietnam.html">베트남</a></li>
+                        <li><a id="list" href="korea.html">한국</a></li>
+                    </ul>
+               	</nav>
+        </div>
 
 	</header>
 
