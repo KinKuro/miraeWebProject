@@ -139,8 +139,11 @@ li { list-style: none }
             color: white;
         }
 
-        .h_page_area {
-            margin-bottom: 40px;
+        .h_page_area {margin-bottom: 40px;}
+        
+        #top{
+            position: fixed;
+            bottom: 10%;  right: 10%;
         }
         
     footer{
