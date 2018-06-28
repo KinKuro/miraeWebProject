@@ -6,7 +6,7 @@ li { list-style: none }
 	display:block;
 	max-width:1180px;
 	margin:0 auto;
-}		
+}
 	header{
 		display: flex;
 		flex-direction: row;
@@ -15,8 +15,10 @@ li { list-style: none }
 	}
 		#menu{
             background-image:url(Japan/japan.jpg);
+            /*max-width: 100%; height: auto;*/
 			/*background-color: red;*/
-			/*border: 5px solid #d2d2d2;*/
+            /*border: 5px solid #d2d2d2;*/
+            /*asd*/
 			padding: 5px 10px;
 			font-size: 36pt;
 			color: white;
@@ -238,8 +240,7 @@ li { list-style: none }
                 font-size: 13px;
                 line-height: 25px;
             }
-            #top{display: none;}
-            #down{display: none;}
+            
         }
 
         @media screen and (max-width: 720px) { /* Mobile */
