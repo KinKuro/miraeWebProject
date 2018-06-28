@@ -37,8 +37,14 @@ function checkInput(){
 	   $('#check_pwcf').html()=="" &&
 	   $('#check_email').html()=="" ){
 		alert('올바른 가입 양식입니다.');
-	}
-	
+	}	
+}
+
+function clearInput(){
+	$('#check_id').html("");
+	$('#check_pw').html("");
+	$('#check_pwcf').html("");
+	$('#check_email').html("");
 }
 
 function backPage(){
