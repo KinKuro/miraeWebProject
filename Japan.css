@@ -13,10 +13,10 @@ li { list-style: none }
 		justify-content: space-around;
 		align-items: center;
 	}
-
 		#menu{
-			background-color: red;
-			border: 5px solid red;
+            background-image:url(Japan/japan.jpg);
+			/*background-color: red;*/
+			/*border: 5px solid #d2d2d2;*/
 			padding: 5px 10px;
 			font-size: 36pt;
 			color: white;
@@ -28,7 +28,6 @@ li { list-style: none }
             margin-left: 5px;
 
 		}
-
 		#header{
 			width: 50%;
 			height: 90px;
@@ -38,20 +37,12 @@ li { list-style: none }
 			justify-content: space-between;
 			align-items: center;
 		}
-
 		#header2_div{
 			display:inline;
 			text-align: right;
 		}
-		#header2{
-			font-size:16pt;
-		}
-
-        #wrapper{
-            display: none;
-        }
-
-	
+		#header2{font-size:16pt;}
+        #wrapper{display: none;}
 
 		aside#left{
 			text-align: left;
@@ -79,10 +70,7 @@ li { list-style: none }
             text-align: center;
         }
 
-        .d2program_box:nth-child(2n-1) {
-            margin-right: 40px;
-        }
-
+        .d2program_box:nth-child(2n-1) {margin-right: 40px;}
         .d2program_box:nth-child(2n):after {
             display: block;
             content: '';
@@ -143,7 +131,11 @@ li { list-style: none }
         
         #top{
             position: fixed;
-            bottom: 10%;  right: 10%;
+            bottom: 50%;  right: 7%;
+        }
+        #down{
+            position: fixed;
+            bottom: 45%;  right: 7%;
         }
         
     footer{
@@ -183,6 +175,14 @@ li { list-style: none }
                 height: 25px;
                 font-size: 13px;
                 line-height: 25px;
+            }
+            #top{
+            position: fixed;
+            bottom: 40%;  right: 1%;
+            }
+            #down{
+            position: fixed;
+            bottom: 35%;  right: 1%;
             }
         }
 
@@ -238,6 +238,8 @@ li { list-style: none }
                 font-size: 13px;
                 line-height: 25px;
             }
+            #top{display: none;}
+            #down{display: none;}
         }
 
         @media screen and (max-width: 720px) { /* Mobile */
@@ -306,4 +308,7 @@ li { list-style: none }
                 line-height: 50px;
                 font-size: 20px;
             }
+
+            #top{display: none;}
+            #down{display: none;}
         }
