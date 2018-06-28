@@ -3,10 +3,25 @@
 <head>
 	<title>Japan</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="jp.css">
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            // hide the menu when the page load
+            $("#navigation-list").hide();
+            // when .menuBtn is clicked, do this
+            $(".menuBtn").click(function() {
+                // open the menu with slide effect
+                $("#navigation-list").slideToggle(300);
+            });
+        });
+        
+    </script>
 
 <body id="">
 	<div id="main">
@@ -17,11 +32,11 @@
 		</div>
 
 		<div id="header">
-			<a href="china.html">중국</a>
-			<a href="greece.html">그리스</a>
-			<a href="japan.html">일본</a>
-			<a href="vietnam.html">베트남</a>
-			<a href="korea.html">한국</a>
+			<a href="china.html" target="_self">중국</a>
+			<a href="greece.html" target="_self">그리스</a>
+			<a href="japan.html" target="_self">일본</a>
+			<a href="vietnam.html" target="_self">베트남</a>
+			<a href="korea.html" target="_self">한국</a>	
 			
 		</div>
 
@@ -30,7 +45,18 @@
 			<a href="register.html" id="header2">회원가입</a>
 		</div>
 
-
+		<div class="wrapper">
+             <span class="menuBtn"><img src="Japan/icon.svg" alt="Menu icon"></span>
+                <nav id="navigation-list">
+                  	<ul>
+                        <li><a id="list" href="china.html" target="_self">중국</a></li>
+                        <li><a id="list"href="greece.html" target="_self">그리스</a></li>
+                        <li><a id="list" href="japan.html" target="_self">일본</a></li>
+                        <li><a id="list" href="vietnam.html" target="_self">베트남</a></li>
+                        <li><a id="list" href="korea.html" target="_self">한국</a></li>
+                    </ul>
+               	</nav>
+        </div>
 
 	</header>
 
@@ -39,13 +65,32 @@
 		
 		<p><strong>Japan</strong><font size="5pt">|  Sensoji(浅草寺)</font></p>
 	</div>
+
+	<aside id="left">
+      <h4>카테고리</h4>
+        <ul>
+          <li><a target="_self" href="Japan.html">도쿄</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Tsushima.html">대마도</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Nagoya.html">나고야</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오사카</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오카야마</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">고베</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">후쿠오카</a></li>
+        </ul>
+  </aside>
 	
 
     <div class="h_page_area">
         <div class="side_menu"></div>
     </div>
    
-    		<div>
+    		<div id="content">
 
     			<p style="text-align: center;">
     				<img src="Japan/Sensoji.jpg" class="img" style="width: 600px; height:auto;"></p>
@@ -56,19 +101,19 @@
 
       				<p align="center"> 센소지 와서 진짜 일본에 왔다는 느낌이 도쿄라는 느낌 팍팍 받았어요.
       				간간히 보이는 옆 골목을 보면 상점이 계속 있는데, 밤이라서 그런지 문을 닫은 상태였습니다. 3~4시에 오면 활발한 모습을 볼 수 있을 것 같아서 다시 한번 갈 기회가 있다면 낮에 가야할 것 같습니다.</p>
-    		
+    		</div>
 
-
-    
-
-   
+      <div>
+        <a href="#header" id="top"><img src="Japan/top.png" width="50" height="50"></a>
+        <a href="#footer p" id="down"><img src="Japan/down.png" width="50" height="50"></a>
+    </div>
 	
 
 	<footer>
 			
-		<p id="footer p"><a href="about.html" id="footer a">만든 사람들</a>
-		<a href="login.htmml" id="Login">로그인</a>
-		<a href="register.html" id="Login">회원가입</a></p>
+		<p id="footer p"><a href="about.html" target="_self" id="footer a">만든 사람들</a>
+		<a href="login.htmml" target="_self" id="Login">로그인</a>
+		<a href="register.html" target="_self" id="Login">회원가입</a></p>
 		
 	</footer>
 

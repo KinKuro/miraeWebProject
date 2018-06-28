@@ -3,10 +3,25 @@
 <head>
 	<title>Japan</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="jp.css">
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            // hide the menu when the page load
+            $("#navigation-list").hide();
+            // when .menuBtn is clicked, do this
+            $(".menuBtn").click(function() {
+                // open the menu with slide effect
+                $("#navigation-list").slideToggle(300);
+            });
+        });
+        
+    </script>
 
 <body id="">
 	<div id="main">
@@ -17,11 +32,11 @@
 		</div>
 
 		<div id="header">
-			<a href="china.html">중국</a>
-			<a href="greece.html">그리스</a>
-			<a href="japan.html">일본</a>
-			<a href="vietnam.html">베트남</a>
-			<a href="korea.html">한국</a>
+			<a href="china.html" target="_self">중국</a>
+			<a href="greece.html" target="_self">그리스</a>
+			<a href="japan.html" target="_self">일본</a>
+			<a href="vietnam.html" target="_self">베트남</a>
+			<a href="korea.html" target="_self">한국</a>	
 			
 		</div>
 
@@ -30,7 +45,18 @@
 			<a href="register.html" id="header2">회원가입</a>
 		</div>
 
-
+		<div class="wrapper">
+             <span class="menuBtn"><img src="Japan/icon.svg" alt="Menu icon"></span>
+                <nav id="navigation-list">
+                  	<ul>
+                        <li><a id="list" href="china.html" target="_self">중국</a></li>
+                        <li><a id="list"href="greece.html" target="_self">그리스</a></li>
+                        <li><a id="list" href="japan.html" target="_self">일본</a></li>
+                        <li><a id="list" href="vietnam.html" target="_self">베트남</a></li>
+                        <li><a id="list" href="korea.html" target="_self">한국</a></li>
+                    </ul>
+               	</nav>
+        </div>
 
 	</header>
 
@@ -39,13 +65,32 @@
 		
 		<p><strong>Japan</strong><font size="5pt">|  Narutaki waterfall(鳴滝の滝)</font></p>
 	</div>
+
+	<aside id="left">
+      <h4>카테고리</h4>
+        <ul>
+          <li><a target="_self" href="Japan.html">도쿄</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Tsushima.html">대마도</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Nagoya.html">나고야</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오사카</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오카야마</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">고베</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">후쿠오카</a></li>
+        </ul>
+  </aside>
 	
 
     <div class="h_page_area">
         <div class="side_menu"></div>
     </div>
    
-    		<div>
+    		<div id="content">
 
     			<p style="text-align: center;">
     				<img src="Japan/Narutaki waterfall.jpg" class="img" style="width: 600px; height:auto;"></p>
@@ -55,19 +100,17 @@
       				<h2 align="center">폭포에 대해 자세히 몰라서 설명을 잘 못하겠지만 물은 풍부하게 흐르는 수원은 아니고 적당히 흐르는느낌?</h2>
 
       				<p align="center"> 높이가 15미터라고 하더라구요 막 시원하게 감동을 주며 떨어지는 폭포는 아니었지만, 좋은 기운을 퍼트리는 느낌을 주며 떨어지는 물줄기를 보니까 마음이 상쾌해지는 기분이 들면서 측백나무와 편백나무 향기가 기분을 상쾌하게 해주드라구요.</p>
-    		
-
-
-    
-
-   
-	
+    		 </div>
+	<div>
+        <a href="#header" id="top"><img src="Japan/top.png" width="50" height="50"></a>
+        <a href="#footer p" id="down"><img src="Japan/down.png" width="50" height="50"></a>
+    </div>
 
 	<footer>
 			
-		<p id="footer p"><a href="about.html" id="footer a">만든 사람들</a>
-		<a href="login.htmml" id="Login">로그인</a>
-		<a href="register.html" id="Login">회원가입</a></p>
+		<p id="footer p"><a href="about.html" target="_self" id="footer a">만든 사람들</a>
+		<a href="login.htmml" target="_self" id="Login">로그인</a>
+		<a href="register.html" target="_self" id="Login">회원가입</a></p>
 		
 	</footer>
 

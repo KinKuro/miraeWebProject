@@ -14,8 +14,8 @@ li { list-style: none }
 		align-items: center;
 	}
 		#menu{
-            background-image:url(Japan/japan.jpg);
-            /*max-width: 100%; height: auto;*/
+            background-image:url('Japan/japan.jpg');
+            max-width: 100%; height: auto;
 			/*background-color: red;*/
             /*border: 5px solid #d2d2d2;*/
             /*asd*/
@@ -131,14 +131,26 @@ li { list-style: none }
 
         .h_page_area {margin-bottom: 40px;}
         
+        #top,#down{
+            margin:0px;   padding:0px;
+            width:50px;   height:50px;
+        }
         #top{
             position: fixed;
             bottom: 50%;  right: 7%;
         }
+        #top:hover{
+            background-color: red;
+        }
         #down{
             position: fixed;
-            bottom: 45%;  right: 7%;
+            bottom: 44%;  right: 7%;
         }
+        #down:hover{
+            background-color: red;
+        }
+
+        
         
     footer{
         width:100%;
@@ -159,7 +171,8 @@ li { list-style: none }
             #main {max-width: 950px;}
 
             header {width: 940px;}
-            #menu {width: 910px; font-size: 32pt;}
+            #menu { font-size: 32pt;
+            background-image:url('Japan/japan_Tablet 1.jpg');}
             footer {width: 940px;}
 
             .d2program_box {width: 298px; height: 320px;}
@@ -184,7 +197,7 @@ li { list-style: none }
             }
             #down{
             position: fixed;
-            bottom: 35%;  right: 1%;
+            bottom: 34%;  right: 1%;
             }
         }
 
@@ -192,7 +205,8 @@ li { list-style: none }
             #main {max-width: 670px;}
 
             header {width: 670px;}
-            #menu {width: 640px; font-size: 24pt;}
+            #menu {width: 650px; height: 141px; font-size: 24pt;
+                background-image:url('Japan/japan_Tablet 2.jpg');}
             footer {width: 670px;}
 
             aside#left {
@@ -240,6 +254,14 @@ li { list-style: none }
                 font-size: 13px;
                 line-height: 25px;
             }
+            #top{
+            position: fixed;
+            bottom: 40%;  right: 1%;
+            }
+            #down{
+            position: fixed;
+            bottom: 34%;  right: 1%;
+            }
             
         }
 
@@ -247,7 +269,6 @@ li { list-style: none }
             body {margin: 0;}
 
             #main {max-width: initial;}
-
             header {
                 width: 100%;
                 margin: 0 auto;
@@ -261,6 +282,7 @@ li { list-style: none }
             #header{display: none;}
             #header2_div{display: none;}
             #menu {
+                background-image:url('Japan/japan_Mobile.jpg');
                 width: 100%;
                 font-size: 20pt;
                 position: relative;

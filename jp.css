@@ -15,17 +15,14 @@ li { list-style: none }
     }
 
         #menu{
-            background-color: red;
-            border: 5px solid red;
+            background-image:url('Japan/japan.jpg');
             padding: 5px 10px;
             font-size: 36pt;
             color: white;
             text-align: center;
         }
 
-        #header-logo{
-            float:left;
-        }
+        #header-logo{float:left;}
 
         #header{
             width: 50%;
@@ -41,13 +38,50 @@ li { list-style: none }
             display:inline;
             text-align: right;
         }
-        #header2{
-            font-size:16pt;
+        #header2{font-size:16pt;}
+        #wrapper{display: none;}
+
+        aside#left{
+            text-align: left;
+            float: left;
+            color: black;
+            width: 300px;
+            height: 600px;
+            background-color: white;    
         }
+            aside#left *{margin:0; padding:0;}
+            aside#left h4{margin:10px;}
+            aside#left li{text-align:center;}
+            aside#left li:hover{background-color:#dddddd;}
+            aside#left a{font-size: 20pt;}
+            aside#left ul {margin-right: 20px;}
 
         .img{
             width: 500px;
             height: 500px;
+        }
+        #top,#down{
+            margin:0px;   padding:0px;
+            width:50px;   height:50px;
+        }
+        #top{
+            position: fixed;
+            bottom: 50%;  right: 7%;
+        }
+        #top:hover{
+            background-color: red;
+        }
+        #down{
+            position: fixed;
+            bottom: 44%;  right: 7%;
+        }
+        #down:hover{
+            background-color: red;
+        }
+
+        #content{
+            float: right;
+            width:850px;
         }        
         
     footer{
@@ -69,20 +103,83 @@ li { list-style: none }
 
     @media screen and (max-width: 1260px) { /* Tablet 1 */
             #main {max-width: 950px;}
+
             header {width: 940px;}
-            #menu {width: 910px; font-size: 32pt;}
+            #menu {width: 910px; font-size: 32pt;
+                    background-image:url('Japan/japan_Tablet 1.jpg');
+                }
+            #content{
+                float: left;
+                width:580px;
+                margin-right:10px;
+            }
+
             footer {width: 940px;}
+
             .img {height: 130px; margin-bottom: 10px;}
+            
+            #top{
+            position: fixed;
+            bottom: 40%;  right: 1%;
+            }
+            #down{
+            position: fixed;
+            bottom: 34%;  right: 1%;
+            }
             
         }
 
          @media screen and (max-width: 980px) { /* Tablet 2 */
             #main {max-width: 670px;}
+
             header {width: 670px;}
-            #menu {width: 640px; font-size: 24pt;}
+            #menu {width: 640px; font-size: 24pt;
+                background-image:url('Japan/japan_Tablet 2.jpg');}
             footer {width: 670px;}
+
+            aside#left {
+                width: 99.8%;
+                height: 208px;
+                margin: 30px 0;
+                border: 1px solid black;
+            }
+            aside#left h4 {
+                text-align: center;
+                height: 40px;
+                font-size: 21px;
+                line-height: 40px;
+                margin: 0;
+                background-color: #eeeeee;
+            }
+            
+            aside#left ul {margin-right: 0; height: 360px;}
+            aside#left a {font-size: 16pt;}
+            aside#left li {
+                display: inline-block;
+                height: 42px;
+                width: 49.5%;
+                line-height: 42px;
+            }
+            aside#left li:nth-of-type(2n-1) {border-right: 1px solid black;}
+            aside#left p {display: none;}
+
+            #content{
+                clear:both;
+                width:100%;
+                margin-right:0px;
+            }
+
+
             #main > ul {padding-left: 0;}
             .img {height: 130px; margin-bottom: 10px;}
+            #top{
+            position: fixed;
+            bottom: 40%;  right: 1%;
+            }
+            #down{
+            position: fixed;
+            bottom: 34%;  right: 1%;
+            }
         }
 
         @media screen and (max-width: 720px) { /* Mobile */
@@ -94,8 +191,10 @@ li { list-style: none }
                 width: 100%;
                 margin: 0 auto;
             }
+            #header{display: none;}
             #header2_div{display: none;}
             #menu {
+                background-image:url('Japan/japan_Mobile.jpg');
                 width: 100%;
                 font-size: 20pt;
                 position: relative;
@@ -105,7 +204,37 @@ li { list-style: none }
                 height: 109px;
                 line-height: 109px;
             }
-            footer {width: 100%; }
             #Login{display: none;}
+            .menuBtn {
+                display: block;
+                line-height: 85px;
+                text-align: right;
+                padding-right: 20px;
+                cursor: pointer;
+            }
+            .menuBtn img {
+                width: 100px; height: 50px;
+                position: relative;
+                top: 16px;
+            }
+            footer {width: 100%; }
+            aside#left {
+                width: calc(100% - 2px);
+                height: 335px;
+                margin-top: 3px;
+            }
+            aside#left li {display: block; width: 100%;}
+            aside#left li:nth-of-type(2n-1) {
+                border-right: none;
+            }
+
+            #content{
+                clear:both;
+                width:100%;
+                margin-right:0px;
+            }
+
             .d2program_box .img {width: 100%; height: auto; margin-bottom: 20px;}
+            #top{display: none;}
+            #down{display: none;}
         }

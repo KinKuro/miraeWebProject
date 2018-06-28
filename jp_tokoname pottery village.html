@@ -3,10 +3,24 @@
 <head>
 	<title>Japan</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="jp.css">
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            // hide the menu when the page load
+            $("#navigation-list").hide();
+            // when .menuBtn is clicked, do this
+            $(".menuBtn").click(function() {
+                // open the menu with slide effect
+                $("#navigation-list").slideToggle(300);
+            });
+        });
+        
+    </script>
 
 <body id="">
 	<div id="main">
@@ -17,11 +31,11 @@
 		</div>
 
 		<div id="header">
-			<a href="china.html">중국</a>
-			<a href="greece.html">그리스</a>
-			<a href="japan.html">일본</a>
-			<a href="vietnam.html">베트남</a>
-			<a href="korea.html">한국</a>
+			<a href="china.html" target="_self">중국</a>
+			<a href="greece.html" target="_self">그리스</a>
+			<a href="japan.html" target="_self">일본</a>
+			<a href="vietnam.html" target="_self">베트남</a>
+			<a href="korea.html" target="_self">한국</a>		
 			
 		</div>
 
@@ -30,22 +44,53 @@
 			<a href="register.html" id="header2">회원가입</a>
 		</div>
 
-
+		<div class="wrapper">
+             <span class="menuBtn"><img src="Japan/icon.svg" alt="Menu icon"></span>
+                <nav id="navigation-list">
+                  	<ul>
+                        <li><a id="list" href="china.html" target="_self">중국</a></li>
+                        <li><a id="list"href="greece.html" target="_self">그리스</a></li>
+                        <li><a id="list" href="japan.html" target="_self">일본</a></li>
+                        <li><a id="list" href="vietnam.html" target="_self">베트남</a></li>
+                        <li><a id="list" href="korea.html" target="_self">한국</a></li>
+                    </ul>
+               	</nav>
+        </div>
 
 	</header>
+
 
 
 	<div id="menu">
 		
 		<p><strong>Japan</strong><font size="5pt">|  Tokoname Pottery Village(常滑焼の村)</font></p>
 	</div>
+
+	<aside id="left">
+      <h4>카테고리</h4>
+        <ul>
+          <li><a target="_self" href="Japan.html">도쿄</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Tsushima.html">대마도</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Nagoya.html">나고야</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오사카</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오카야마</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">고베</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">후쿠오카</a></li>
+        </ul>
+  </aside>
 	
 
     <div class="h_page_area">
         <div class="side_menu"></div>
     </div>
    
-    		<div>
+    		<div id="content">
 
     			<p style="text-align: center;">
     				<img src="Japan/Tokoname.jpg" class="img" style="width: 600px; height:auto;"></p>
@@ -59,19 +104,19 @@
 
       				<p align="center">고양이 조형물들을 지나 코너를 돌면 도자기 마을이 본격적으로 시작된다. 옛 거리가 인상적이고 조그만 도자기 상점들이 있다. 오래된 가마(?)도 있다. 상점들 안에 들어가서 아기자기 한 기념품이나 그릇, 컵, 잔 등을 구경하는 재미도 쏠쏠하다. 가끔 사고 싶은 것들이 있으면 사고~!
       				</p>
-    		
+    		</div>
 
 
-    
-
-   
-	
+	<div>
+        <a href="#header" id="top"><img src="Japan/top.png" width="50" height="50"></a>
+        <a href="#footer p" id="down"><img src="Japan/down.png" width="50" height="50"></a>
+    </div>    
 
 	<footer>
 			
-		<p id="footer p"><a href="about.html" id="footer a">만든 사람들</a>
-		<a href="login.htmml" id="Login">로그인</a>
-		<a href="register.html" id="Login">회원가입</a></p>
+		<p id="footer p"><a href="about.html" target="_self" id="footer a">만든 사람들</a>
+		<a href="login.htmml" target="_self" id="Login">로그인</a>
+		<a href="register.html" target="_self" id="Login">회원가입</a></p>
 		
 	</footer>
 

@@ -3,10 +3,25 @@
 <head>
 	<title>Japan</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="jp.css">
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
 </head>
+	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            // hide the menu when the page load
+            $("#navigation-list").hide();
+            // when .menuBtn is clicked, do this
+            $(".menuBtn").click(function() {
+                // open the menu with slide effect
+                $("#navigation-list").slideToggle(300);
+            });
+        });
+        
+    </script>
 
 <body id="">
 	<div id="main">
@@ -17,11 +32,11 @@
 		</div>
 
 		<div id="header">
-			<a href="china.html">중국</a>
-			<a href="greece.html">그리스</a>
-			<a href="japan.html">일본</a>
-			<a href="vietnam.html">베트남</a>
-			<a href="korea.html">한국</a>
+			<a href="china.html" target="_self">중국</a>
+			<a href="greece.html" target="_self">그리스</a>
+			<a href="japan.html" target="_self">일본</a>
+			<a href="vietnam.html" target="_self">베트남</a>
+			<a href="korea.html" target="_self">한국</a>		
 			
 		</div>
 
@@ -30,7 +45,18 @@
 			<a href="register.html" id="header2">회원가입</a>
 		</div>
 
-
+		<div class="wrapper">
+             <span class="menuBtn"><img src="Japan/icon.svg" alt="Menu icon"></span>
+                <nav id="navigation-list">
+                  	<ul>
+                        <li><a id="list" href="china.html" target="_self">중국</a></li>
+                        <li><a id="list"href="greece.html" target="_self">그리스</a></li>
+                        <li><a id="list" href="japan.html" target="_self">일본</a></li>
+                        <li><a id="list" href="vietnam.html" target="_self">베트남</a></li>
+                        <li><a id="list" href="korea.html" target="_self">한국</a></li>
+                    </ul>
+               	</nav>
+        </div>
 
 	</header>
 
@@ -39,13 +65,32 @@
 		
 		<p><strong>Japan</strong><font size="5pt">|  Nagoya TV Tower(名古屋tvタワー)</font></p>
 	</div>
+
+	<aside id="left">
+      <h4>카테고리</h4>
+        <ul>
+          <li><a target="_self" href="Japan.html">도쿄</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Tsushima.html">대마도</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="Nagoya.html">나고야</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오사카</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">오카야마</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">고베</a></li>
+          <p>&nbsp;</p>
+          <li><a target="_self" href="">후쿠오카</a></li>
+        </ul>
+  </aside>
 	
 
     <div class="h_page_area">
         <div class="side_menu"></div>
     </div>
    
-    		<div>
+    		<div id="content">
 
     			<p style="text-align: center;">
     				<img src="Japan/Nagoya TV Tower.png" class="img" style="width: 600px; height:auto;"></p>
@@ -53,25 +98,22 @@
 
       			<h1 align="center" id="title">나고야 TV 타워 (名古屋tvタワー)</h1>
       				<h2 align="center">펠탑과 비슷해 보이는 미나미 나고야 TV타워로 나고야 관광지로 꼭가는 곳이며 엘레베이터를 타고 나고야 TV 타워 아래를 보는 풍경이
-					일품입니다.
-
-					</h2>
+					일품입니다.</h2>
 
       				<p align="center">엘레베이터를 타고 올라가야하는데 초스피드하게 엘레베이터를 타고 전망대 까지 올라 가는데 얼마 안걸리더라구요</p>
+        </div>
     		
-
-
-    
-
-   
-	
+	<div>
+        <a href="#header" id="top"><img src="Japan/top.png" width="50" height="50"></a>
+        <a href="#footer p" id="down"><img src="Japan/down.png" width="50" height="50"></a>
+    </div>
 
 	<footer>
 			
-		<p id="footer p"><a href="about.html" id="footer a">만든 사람들</a>
-		<a href="login.htmml" id="Login">로그인</a>
-		<a href="register.html" id="Login">회원가입</a></p>
-		
+		<p id="footer p"><a href="about.html" target="_self" id="footer a">만든 사람들</a>
+		<a href="login.htmml" target="_self" id="Login">로그인</a>
+		<a href="register.html" target="_self" id="Login">회원가입</a></p>
+
 	</footer>
 
 
