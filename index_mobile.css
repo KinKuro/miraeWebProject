@@ -3,8 +3,14 @@ a{text-decoration:none; color:black;}
 a:hover{text-decoration:underline;}
 ul, li{list-style:none; }
 
+@font-face{
+	font-family:naverNanum;
+	src:url('NanumBarunGothic.ttf');
+}
+a,p{font-family:'naverNanum';}
+
 div#main{
-	min-width:360px
+	min-width:600px;
 }
 
 /*header*/

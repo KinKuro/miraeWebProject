@@ -1,5 +1,11 @@
 *{margin:0; padding:0;}
 
+@font-face{
+	font-family:naverNanum;
+	src:url('NanumBarunGothic.ttf');
+}
+a,p{font-family:'naverNanum';}
+
 div#main{
 	width:500px;	height:200px;
 	margin:200px auto;
