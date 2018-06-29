@@ -20,6 +20,15 @@
                 // open the menu with slide effect
                 $("#navigation-list").slideToggle(300);
             });
+            // 화면 이동 버튼(페이지 이동 안하도록 앵커 기능을 false로 둠)
+            $("#top").click(function(event){
+                $("html, body").animate({ scrollTop: 0}, '500', 'swing');
+                return false;
+            });
+            $("#down").on('click', function(event){
+                $("html, body").animate({scrollTop: $(document).height()}, '500', 'swing');
+                return false;
+            });
         });
         
     </script>
@@ -109,12 +118,12 @@
     		
     <div>
         <a href="#header" id="top"><img src="Japan/top.png" width="50" height="50"></a>
-        <a href="#footer p" id="down"><img src="Japan/down.png" width="50" height="50"></a>
+        <a href="#footer_p" id="down"><img src="Japan/down.png" width="50" height="50"></a>
     </div>
 
 	<footer>
 			
-		<p id="footer p"><a href="about.html" target="_self" id="footer a">만든 사람들</a>
+		<p id="footer_p"><a href="about.html" target="_self" id="footer a">만든 사람들</a>
 		<a href="login.htmml" target="_self" id="Login">로그인</a>
 		<a href="register.html" target="_self" id="Login">회원가입</a></p>
 		
