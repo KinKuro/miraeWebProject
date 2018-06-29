@@ -24,6 +24,9 @@ header{
 		display:inline-flex;
 		align-items: center;
 	}
+		header #logo img{
+			width:200px;	height:100px;
+		}
 	header #menu{
 		position:absolute;
 		top:25px; right:10px;
