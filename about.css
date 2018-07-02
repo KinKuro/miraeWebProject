@@ -47,7 +47,32 @@ header{
 		}
 
 /*article*/
+article{
+	min-height:1000px;
+	text-align:center;
+}
+	article div.article{
+		display:inline-block;
+		margin:10px;
+		width:400px; height:300px;
+		border: 1px solid #dddddd;
+		text-align:center;
+	}
+	article .article img{
+		display:inline-block;
+		width:200px; height:150px;
+	}
+	article .article .name{
+		display:block;
+		font-size:24px;
+		margin:10px;
+	}
+	article .article .make{
+		display:block;
+		margin:10px;
+	}
 
+/*footer*/
 footer{
 	background-color:skyblue;
 	width:100%;	height:150px;
@@ -82,7 +107,7 @@ footer{
 		}
 		header #menu{
 			position:absolute;
-			top:25%;	right:25%;
+			top:25%;	right:15%;
 			width:; height:;
 			visibility: visible;
 		}
@@ -111,22 +136,55 @@ footer{
 			header #right ul, header #right li{			
 			}
 	/*article*/
-
+	article{
+		min-height:1000px;
+	}
+		article div.article{
+			display:inline-flex;
+			margin:5px;
+			width:100%; height:100%;
+			border: 1px solid #dddddd;
+			align-items: center;
+			flex-direction:row;
+			justify-content: space-around;
+			text-align : center;
+		}
+		article .article img{
+			display:inline-block;
+			width:200px; height:150px;
+		}
+		article .article .name{
+			display:inline-block;
+			font-size:24px;
+			margin:10px;
+		}
+		article .article .make{
+			display:inline-block;
+			margin:5px;
+			width:170px;
+		}
+		.article:nth-child(2n+1){
+			background-color:lightgray;
+		}
 
 	footer{
 		background-color:skyblue;
-		width:100%;	
+		width:100%;	height:100%;
 		text-align:center;
+		line-height:100%;
 	}
+		footer ul{ display:block; height:100%; }
 		footer li{
+			display:block;
 			margin:5px 0;
+			height:50px;
 		}
 		footer li:hover{
 			background-color:blue;
 		}
-			footer li p{
-				
+			footer li p{				
 				text-align:center;
+				line-height:100%;
 			}
 			footer li a{
 				font-size:24px;
