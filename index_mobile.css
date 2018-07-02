@@ -31,12 +31,15 @@ header{
 		position:absolute;
 		top:25px; right:10px;
 		width:; height:;
+		display: block;
 		visibility: visible;
 	}
-	header nav#links ul{		
+	header nav#links ul{
+		display: none;
 		overflow:hidden;
 	}
 		header #links li{
+			
 			width:100%;
 			height:30px;
 			background-color:green;
@@ -45,6 +48,7 @@ header{
 			background-color:lightgreen;
 		}
 		header #links a{
+			visibility:inherit;
 			font-size:16pt;
 		}
 	header #right{

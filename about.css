@@ -102,19 +102,24 @@ footer{
 	}
 		header #logo{
 			margin:5px 0;
-			display:inline-flex;
+			display:flex;
 			align-items: center;
 		}
+			header #logo img{
+				width:200px; height:100px;
+			}
 		header #menu{
 			position:absolute;
 			top:25%;	right:15%;
 			width:; height:;
+			display:block;
 			visibility: visible;
 		}
 		header nav#links ul{
-			visibility: none;
+			display:none;
 		}
 			header #links li{
+				display:block;
 				visibility: none;
 				width:100%;
 				height:30px;
