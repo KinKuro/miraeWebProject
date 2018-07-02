@@ -98,6 +98,11 @@ li { list-style: none }
         line-height: 40px;
         vertical-align: middle;
     }
+    footer p a{
+
+        margin:0 30px;
+    }
+
 
     footer a{font-size: 32px; color: white;}
 
