@@ -205,8 +205,8 @@ section{
 	width:60%;
 	background-color: #009999;
 	/*background: url(img/vietnam.jpg) repeat;*/
-     border: 2px solid black;
-     opacity: 0.6;
+   /* border: 2px solid black;
+    */
 }
 
 .items{
@@ -241,7 +241,7 @@ article{
 	width:auto;
 	background: url(img/vietnam.jpg) no-repeat;
     border: 2px solid black;
-    opacity: 0.6;
+   
 }
 
 
@@ -262,7 +262,7 @@ article{
 
  article li{
  	margin-right: 300px;
- 	border:solid 1px #ff0000;
+ 	/*border:solid 1px #ff0000;*/
  	padding-right: 300px;
  }
 
