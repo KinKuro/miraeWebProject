@@ -1,5 +1,6 @@
 *{margin:0; padding:0;}
-
+a{text-decoration:none; color:black;}
+a:hover{text-decoration:underline; color:red;}
 @font-face{
 	font-family:naverNanum;
 	src:url('NanumBarunGothic.ttf');

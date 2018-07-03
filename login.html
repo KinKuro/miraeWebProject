@@ -9,6 +9,10 @@
 		function login(){
 			alert('로그인 기능은 준비중에 있습니다.');
 		}
+		function back(){
+			history.back();
+			return;
+		}
 	</script>	
 </head>
 <body>
@@ -22,6 +26,7 @@
 				<input type="password" name="pw" id="pw" placeholder="패스워드">
 			</div>
 			<div class="sub"><input type="submit" name="" value="로그인" onclick="login()"></div>
+			<div class=""><a href="#" onclick="back()">뒤로가기</a></div>
 		</form>		
 	</div>
 </body>
