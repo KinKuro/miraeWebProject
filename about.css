@@ -24,6 +24,9 @@ header{
 }
 	header #logo{
 	}
+		header #logo img{
+			width:200px;	height:100px;
+		}
 	header #links{
 		padding : 10px;
 	}
