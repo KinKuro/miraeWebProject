@@ -1,0 +1,335 @@
+*{
+	margin: 0;
+	padding: 0;
+	margin: 1px border red;
+}
+	@font-face{
+		font-family: myFirstFont;
+		src:url(NanumBarunGothic.ttf);
+	}
+body{
+	font-family: "Sans-serif";
+	font-size:20px;
+	
+	
+}
+/*바디섹션 스타일 주기*/
+
+#background{
+	 background: url(vietnam.jpg) repeat;
+     border: 2px solid black;
+    
+}
+
+
+
+
+#page{
+	display: block;
+	max-width: 1180px;
+	margin:0 auto;
+
+}
+
+/*헤더는 인라인요소*/
+header{
+	padding-top: 30px;
+	background-color:#FFCC33;
+	height: 90px;
+
+
+	/*border:2px solid blue;윤곽확인작업*/
+}
+
+#div_logo{
+	float:left;
+	margin-left: 50px; 
+	width: 50px;
+	height: 100px;
+}	
+	
+#navi_menu{
+	float: left;
+	margin-left: 50px;
+}
+
+#navi_menu li{
+	display: inline;
+	margin: 3px; 
+	margin-left: 50px;
+}
+
+#navi_menu li a{
+	
+	a:hover{ background-color:#66ff66};
+
+}
+
+#div_login{
+	float: right;
+	/*margin-left: : 100px;*/
+	/*padding-left: 100px;*/
+}
+
+#div_login a{
+	margin: 5px;
+	color: #000000;
+}
+/*헤더 종료*/
+
+/*섹션*/
+
+/*#p_main{
+	background-color: blue;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}*/
+/*가운데 글자넣기*/
+
+/*#p_vietnam{
+	display: inline;
+	text-align: center;
+	font-size: :36px;
+	color: white;
+	bottom: 30px;
+	text-align: center;
+	vertical-align:center;
+	
+}
+
+#p_history{
+	display: inline;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+	bottom: : 30px;
+	text-align: center;
+	vertical-align:center;
+
+}*/
+
+.cycle-slideshow, .cycle-slideshow *{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cycle-slideshow{
+	width:100%; min-width: 200px;
+	height: 300px;
+	margin: 10px auto;
+	padding: 0;
+	position: relative;
+}
+.cycle-slideshow div.slide{width: 100%;height: 100%;}
+.cycle-slideshow img{
+	position: absolute;top: 0; left 0;
+	width: 100%; height:300px;
+	padding:0;display: block;
+}
+.cycle-slideshow img:first-child{
+	position:static;
+	z-index: 100;
+}
+
+.cycle-pager{
+	text-align: center;width: 100%;z-index: 500;position: absolute;top: 2px; overflow: hidden;
+}
+
+.cycle-pager span{
+	font-family: arial; font-size: 50px; width: 16px; height: 16px;
+	display: inline-block; color: #ddd; cursor:pointer;
+}
+
+.cycle-pager span.cycle-pager-activie{color: #FFCC33;}
+.cycle-pager>*{cursor: pointer;}
+
+/*타이틀*/
+p#tt{
+	margin: 10px 0;
+	display:inline-block;
+	text-align:center;
+	font-size: 14pt;
+	position: static;
+	border: 2px solid black;
+    opacity: 0.6;
+}
+
+
+/*사이드메뉴바*/
+aside{
+	float: left;
+	width: 300px;
+	height: 800px; 
+	background-color: #9DDDE9;
+	text-align: center;
+
+	
+}
+
+aside ul{
+	margin-bottom: 50px;
+	padding-top: 50px;
+	}
+
+aside ul li{
+	
+	
+	list-style: none;
+}
+
+aside ul li a{
+	
+	text-decoration-style: wavy;
+	color: #009999;
+	width: 150px;
+	height: 50px;
+
+}
+
+aside ul li a {
+	color: blue;
+}
+/*어사이드 종료*/
+
+/*섹션 아티클 라이트*/
+section{
+	float:right;
+	width:60%;
+	background-color: #009999;
+	/*background: url(img/vietnam.jpg) repeat;*/
+   /* border: 2px solid black;
+    */
+}
+
+.items{
+	display: inline-block;
+	height: 150px;
+	width: 130px;
+   
+    
+
+}
+
+
+.items img{
+	display: block;
+}
+.items p{
+	background-color: black;
+}
+/*두번째 아티클 게시판*/ 
+ /*article{	
+	float: right;
+	position: relative;	
+	background-color: #EAEAEA;
+}
+ */
+.class_title{
+	
+}
+
+article{
+	float:right;
+	width:auto;
+	background: url(img/vietnam.jpg) no-repeat;
+    border: 2px solid black;
+   
+}
+
+
+
+ article img{
+ 	float:left;
+ 	padding-top: 30px;
+ 	padding-right: 120px;
+	padding-left: 10%;
+	margin-left: 40px;
+}	
+
+  /*article ul{
+	padding-top: 30px;
+	
+}*/	
+
+
+ article li{
+ 	margin-right: 300px;
+ 	/*border:solid 1px #ff0000;*/
+ 	padding-right: 300px;
+ }
+
+#iframe{
+	width: 100%;
+	padding-right: 0px;
+	margin-right: 5px;
+	background-color:;
+}
+        @media screen and (max-width: 1200px) {
+             #page{width: 94%;}
+             header{width: 100%;}
+             aside{width: 30%;}
+             article{width: 65%;}
+             iframe{width: 100%;}
+        }    	
+        @media screen and (max-width: 780px) {
+        	body{min-width: 600px;}
+        	header{width: auto}
+        	#navi_menu li{
+				display: inline;
+				margin: 3px; 
+				margin-left: 20px;
+			}
+			#div_login a{
+				margin: 5px;
+				color: #000000;
+				font-size: 18px;
+			}
+
+        	aside{
+        		width:230px;
+        		margin-left: 0px;
+        		height:auto;
+        	}
+        	article{
+        		width:100%;
+        	}
+        	.items{
+        		margin-right: 30px;
+
+        	}
+
+        }    						
+        header,aside,section,iframe{
+        	border:solid 2px yellow;
+
+        }
+
+/*subject{
+	padding-top: ;
+	margin-left: 20%;
+ 	margin-top: 0.5%
+ 
+ }
+
+
+
+
+hr{
+	clear: both;
+}
+
+footer{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	margin-top: 50px;
+}*/

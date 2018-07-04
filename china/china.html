@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
+   <script type="text/javascript">
+      $(function(){
+         var count=0;
+         var count1=0;
+         var sumcount=0;
+           $('.img1').click(function(){
+              if(count==0){
+                 $('.img1').width('330px');
+                 $('.img1').height('330px');
+                 $('.right').height("800px");
+                 count=count+1;
+              }else if(count==1){
+                 $('.img1').width('220px');
+                 $('.img1').height('220px');
+                 $('.right').height("600px");
+                 count=count-1;
+              }
+           });
+           $('.img2').click(function(){
+              if(count1==0){
+                 $('.img2').width('330px');
+                 $('.img2').height('330px');
+                 $('.right').height("800px");
+                 count1=count1+1;
+              }else if(count1==1){
+                 $('.img2').width('220px');
+                 $('.img2').height('220px');
+                 $('.right').height("600px");
+                 count1=count1-1;
+              }
+           });
+      });
+   </script>
+
+	<style type="text/css">
+		.infor{
+			width: 100%;
+			height: 50px;
+			line-height: 50px;
+			vertical-align: center;
+			font-size: 30px;
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+		a{
+			text-decoration:none;
+			color: #AAAAAA;
+			font-weight: bold;
+		}
+		body{
+			width: 1180px;
+			margin:0 auto;
+		}
+		.asF{
+			color:#00FF00;
+		}
+		a:hover{
+			color:#00FF00;
+		}
+		header{
+			background-color: #fff;
+    		border-bottom: 1px solid #d6d6d6;
+    		position: relative;
+    		width: 100%;
+    		height: 100px;
+    		margin: 0 auto;
+		}
+		#hlist{
+			list-style-type:none;
+			display: inline-block;
+    		height: 100%;
+    		vertical-align: middle;
+		}
+		#hlist>li{
+			display: inline-block;
+			margin-top: 20px;
+		}
+		#hlist>li + li{
+			margin-left: 30px;
+		}
+		#hlist>li>a{
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.logo_area{
+			display: inline-block;
+    		float: left;
+    		height: 100%;
+    		width: 150px;
+		}
+		.tma{
+			color: #595959;
+    		display: block;
+    		font-size: 16px;
+    		outline: none;
+		}
+		.fuy2uvj{
+			display: block;
+    		float: left;
+    		position: relative;
+    		width: 750px;
+    		height: 90px;
+    		margin-left: 50px;
+		}
+		.Banner{
+			line-height: 200px;
+			vertical-align: center;
+			width: 100%;
+    		height: 200px;
+    		font-size:64px;
+   	 		text-align: center;
+   	 		background-color: #FF0000;
+   	 		color:#FFFFFF;
+   	 		margin:0 auto;
+   	 		display: block;
+		}
+		.topM{
+			display: none;
+		}
+		.left{
+			float: left;
+			width: 300px;
+			height: 600px;
+		}
+		.right{
+			float: left;
+			width: 1000px;
+			height: 600px;
+		}
+		.Main{
+			width: 1440px;
+			height: 600px;
+			margin:0 auto;
+		}
+		.leftM{
+			display: block;
+			width: 150px;
+			height: 600px;
+
+			margin: 0 auto;
+		}
+		.leftM>ul{
+			list-style-type: none;
+			margin-top: 60px;
+		}
+		.leftM>ul>li{
+			width:150px;
+			height: 50px;
+			background: #FFFFFF;
+			font-family:Nanum Barun Gothic, sans-serif;
+			font-size: 30px;
+		}
+		.leftM>ul>li + li{
+			margin-top: 20px;
+		}
+		.leftM>h1{
+			text-align: center;
+		}
+		footer{
+			width: 100%;
+			height: 150px;
+			margin:0 auto;
+			line-height: 150px;
+			text-align: center;
+			background-color: #990000;
+		}
+		.atc{
+			width: 250px;
+			height: 250px;
+			background: #666666;
+		}
+		.lifirst{
+			margin-right: 200px;
+		}
+		.lilast{
+			margin-left: 200px;
+		}
+		footer>ul{
+			list-style-type: none;
+			display: block;
+		}
+		footer>ul>li{
+			display: inline;
+		}
+		footer>ul>li>a{
+			font-size: 30px;
+		}
+		.right>div{
+			width:1440px;
+			display: inline-block;
+		}
+		.right>div>img{
+			width:220px;
+			height:220px;
+		}
+		.pfirst{
+			font-weight: bold;
+			font-size: 30px;
+		}
+		@media screen and (max-width: 1350px){
+			.Banner{
+				display: none;
+			}
+			.left{
+				display: none;
+			}
+			.right{
+				float :none;
+			}
+			.topM{
+				margin-top: 0;
+				margin-bottom: 0;
+				width:100%;
+				height:100px;
+				display: block;
+				margin:0 auto;
+				background-color: #FF0000;
+				line-height: 100px;
+				vertical-align: center;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+			.hrB{
+				width:1350px; 
+			}
+			.topM>ul{
+				list-style-type: none;
+				text-align: center;
+			}
+			.topM>ul>li{
+				display: inline-block;
+				font-family:Nanum Barun Gothic, sans-serif;
+				font-size: 30px;
+			}
+			footer{
+				width: 100%;
+				height: 150px;
+
+			}
+			.lifirst{
+				margin-right: 100px;
+			}
+			.lilast{
+				margin-left: 100px;
+			}
+		}
+		@media screen and (max-width: 900px){
+			p{
+				font-size: 11px;
+			}
+			body{
+				width: 960px;
+			}
+		}
+	</style>
+
+</head>
+<body>
+	<header>
+		<nav class="fuy2uvj">
+			<a href="../index.html"><img src="logo.png" class="logo_area"></a>
+			<ul id="hlist">
+				<li><a href="../china/china.html" class="tma">중국</a></li>
+				<li><a href="../greece/greece.html" class="tma">그리스</a></li>
+				<li><a href="../japan/japan.html" class="tma">일본</a></li>
+				<li><a href="../vietnam/vietnam.html" class="tma">베트남</a></li>
+				<li><a href="../korea/korea.html" class="tma">한국</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="Banner">CHINA</div>
+	<div class="topM">
+		<ul>
+			<li><a class="asF" href="china.html">베이징</a></li>
+			<li><a class="asS" href="china2.html">청두</a></li>
+		</ul>
+	</div>
+	</aside>
+	<div class="Main">
+		<aside class="left">
+			<div class="leftM">
+				<h1>중국</h1>
+				<ul>
+					<li><a class="asF" href="china.html">베이징</a></li>
+					<li><a class="asS" href="china2.html">청두</a></li>
+				</ul>
+
+			</div>
+		</aside>
+		<article class="right">
+			<h1>관광지소개(베이징)</h1>
+			<hr width="860" align="left">
+			<div>
+				<img class="img1" float="left" src="caption.jpg"  align="left" vspace="10" hspace="30"">
+				<p class="pfirst" font-size="20">만리장성 </p>
+				<p>설명: 흉노족 등의 유목 민족의 침입을 막기 위해 중국의 고대 진나라(시황제) 때</p> 
+				<p>기존의 성곽을 잇고 부족한 부분은 새롭게 축조하여 만든 거대한 성곽이다.</p>
+			</div>
+
+			<hr width="860" align="left">
+			<div>
+				<img class="img2" float="left" src="leehwa.jpg"  align="left" vspace="10" hspace="30"">
+				<p class="pfirst" font-size="20">이화원 </p>
+				<p>설명: 이화원(중국어 정체자: 頤和園, 간체자: 颐和园, 병음: Yíhéyuán 이허위안)은 </p> 
+				<p>북경 서북부의 하이뎬 구에 위치한 정원 공원이자 궁전이다.</p>
+			</div>
+			<div></div>
+			<div></div>
+		</article>
+
+	</div>
+	<hr width="1180" class="hrB">
+	<footer>
+		<ul>
+			<li class="lifirst"><a href="../about.html">사이트 정보</a></li>
+			<li><a href="../login.html">로그인</a></li>
+			<li class="lilast"><a href="../register.html">회원가입</a></li>
+		</ul>
+	</footer>
+		<script type="text/javascript">
+    $(document).ready(function(){
+          $('.Banner').vidbg({
+              'mp4': 'media/mp4_video.mp4',
+              'webm': 'media/webm_video.webm',
+              'poster': 'media/fallback.jpg',
+          }, {
+            // Options
+            muted: true,
+            loop: true,
+  					overlay: true,
+          });
+          $('.topM').vidbg({
+              'mp4': 'media/mp4_video.mp4',
+              'webm': 'media/webm_video.webm',
+              'poster': 'media/fallback.jpg',
+          }, {
+            // Options
+            muted: true,
+            loop: true,
+  					overlay: true,
+          });
+      });
+  </script>
+  <script src="vidbg.js"></script>
+</body>
+</html>

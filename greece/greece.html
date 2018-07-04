@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>그리스 여행지 정보</title>
+	<link rel="stylesheet" type="text/css" href="greece.css">
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+
+
+		var ispopup=false;
+
+		function loaded(){
+
+			
+			
+			$('#target').load('detail.html');
+			
+			window.onscroll=function(){scrollFunction()};
+			// $('nav .menu').click(function(){
+			// 	if($(".menu li:first").is(":hidden")){
+			// 		$(".menu li").slideDown("slow");
+			// 	}else{
+			// 		$(".menu li").slideUp("slow");
+			// 	}
+			// })
+		}
+
+		function scrollFunction(){
+			if(document.body.scrollTop>20 || document.documentElement.scrollTop>20){
+				document.getElementById("navbar").style.top="0";
+			}else{
+				document.getElementById("navbar").style.top="-50px";
+			}
+		}
+
+		function clickUser(){
+			if(!ispopup){
+				document.getElementById('popup').style.display="inline";
+				ispopup=true;
+				
+			}else{
+				document.getElementById('popup').style.display="none";
+				ispopup=false;
+			}
+
+			
+		}
+
+		
+
+	</script>
+</head>
+<body onload="loaded()" id="bo">
+
+
+
+	<div class="main">
+
+		<nav id="navbar">
+			<a href="#">산토리니</a>
+			<a href="#">호텔</a>
+			<a href="#">문화</a>
+		</nav>
+
+		<header>
+		<div class="headerContainer">
+			<div class="logo">
+				<a href="../index.html"><img src="images/logo/logo.png"></a>
+			</div>
+			<div class="contryContainer">
+				<div class="contry">
+					<a href="../china/china.html" id="china">중국</a>&nbsp;&nbsp;
+					<a href="../greece/greece.html" id="greece">그리스</a>&nbsp;&nbsp;
+					<a href="../japan/japan.html" id="japan">일본</a>&nbsp;&nbsp;
+					<a href="../vietnam/vietnam.html" id="vietnam">베트남</a>&nbsp;&nbsp;
+					<a href="../korea/korea.html" id="korea">한국</a>
+					
+				</div>	
+			</div>
+			
+			<div class="login">
+				<div id="web">
+					<button>로그인</button>
+					<button>회원가입</button>	
+				</div>
+				<div id="mobile">
+					<div id="moblieContainer">
+						
+					</div>
+					<a href="#"><img src="images/header/user.png" id="user" onclick="clickUser()"></a>
+
+					<div id="popup">
+						<button>로그인</button>
+						<button>회원가입</button>
+					</div>
+				</div>
+				
+			</div>	
+		</div>
+		</header>
+
+
+		<div class="contryFlag">
+			<img src="images/flag/greeceFlag.jpg">
+			<p>Greece | 신들의 도시</p>
+		</div>
+		
+		<div class="slideshow-container">
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 7</div>
+		    <img src="images/slide/slide1.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 7</div>
+		    <img src="images/slide/slide2.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 7</div>
+		    <img src="images/slide/slide3.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">4 / 7</div>
+		    <img src="images/slide/slide4.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">5 / 7</div>
+		    <img src="images/slide/slide5.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">6 / 7</div>
+		    <img src="images/slide/slide6.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">7 / 7</div>
+		    <img src="images/slide/slide7.jpg" style="width:100%">
+		    <div class="text">Caption Text</div>
+		  </div>
+
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		<div class="dotContainer">
+		<!-- The dots/circles -->
+			<div style="text-align:center">
+		 		<span class="dot" onclick="currentSlide(1)"></span> 
+		  		<span class="dot" onclick="currentSlide(2)"></span> 
+		  		<span class="dot" onclick="currentSlide(3)"></span> 
+		  		<span class="dot" onclick="currentSlide(4)"></span> 
+		  		<span class="dot" onclick="currentSlide(5)"></span> 
+		  		<span class="dot" onclick="currentSlide(6)"></span>
+		  		<span class="dot" onclick="currentSlide(7)"></span>  
+			</div>	
+
+			
+		</div>
+
+		<article class="boardBackGround">
+			<section class="boardContainer">
+				<div id="target"></div>
+			</section>
+		</article>
+
+		
+
+		<script type="text/javascript">
+			var slideIndex = 0;
+			showSlides2(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			var slideCnt=false;
+			function showSlides(n) {
+			  
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1;} 
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none"; 
+			  }
+			  slideCnt=true;
+			  
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block"; 
+			  dots[slideIndex-1].className += " active";
+			}
+
+			function showSlides2() {
+			    var i;
+			    var slides = document.getElementsByClassName("mySlides");
+			    var dots = document.getElementsByClassName("dot");
+			    for (i = 0; i < slides.length; i++) {
+			       slides[i].style.display = "none";  
+			    }
+			    slideIndex++;
+			    if (slideIndex > slides.length) {slideIndex = 1}    
+			    for (i = 0; i < dots.length; i++) {
+			        dots[i].className = dots[i].className.replace(" active", "");
+			    }
+			    slides[slideIndex-1].style.display = "block";  
+			    dots[slideIndex-1].className += " active";
+			    setTimeout(showSlides2, 2000); // Change image every 2 seconds
+			}
+			
+
+		</script>
+
+	
+
+		<footer>
+			<a href="../about.html">만든 사람들</a>
+			<a href="../login.html">로그인</a>
+			<a href="../register.html">회원가입</a>
+		</footer>
+		
+	</div>
+
+	
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+body{
+	font-family: "Sans-serif";
+	font-size:17px;
+	background-color: #E9673C;
+
+}
+section#right{
+	width: 50%;
+	/*float: right;*/
+	margin-top: 20px;
+	margin-right: 100PX;
+				
+}
+
+/*section#right section{
+	border: 1px solid red;
+}*/
+/*상품 구매정보*/
+
+section#right #summary h3{
+	font-size:16px;
+	padding-bottom: 8px;
+	border-bottom:solid 1px #444444;
+	}
+
+section#right summary h3 span{
+	color:#80a727;
+}
+
+section#right #summary1{
+	float: left;
+	margin-top: 20px;
+}
+
+section#right #summary1 .buttons{
+	text-align: center;
+	margin-top: 10px;
+}
+/*오른쪽 글자 이미지 순*/
+section#right #summary2{
+	width:400px;
+	float:right;
+	margin-top: 20px;
+	padding: 30px: 
+	margin-left:5%;
+}
+
+section#right #summary2 .item{
+	margin:20px 0 0 20px;
+	padding-bottom:10px;
+	border-bottom: solid 1px #cccccc;
+}
+section#right #summary2 .col1{
+	width: 100px;
+}
+
+section#right #summary2 .col2{
+	width: 200px;
+	
+	text-decoration: none;
+}
+
+section#right #summary2 .size{
+	margin:20px 0 0 20px;
+	padding-bottom: 10px;
+	border-bottom:solid 1px #cccccc;
+	text-decoration: none;
+}
+
+section#right #summary2 .size li{
+	margin:100px 0;
+	text-decoration: none;
+}
+
+section#right #summary2 .buttons li{
+	display: inline;
+	text-decoration: none;
+} 
+/*옵션영역*/
+
+section#explanation{
+	clear:both;
+	
+	
+*{border: 1px solid red; }
+body{
+	font-family: "Sans-serif";
+	font-size:17px;
+	background-color: #E9673C;
+
+}
+section#right{
+	width: 50%;
+	/*float: right;*/
+	margin-top: 20px;
+	margin-right: 100PX;
+				
+}
+
+section#right section{
+	border: 1px solid red;
+}
+/*상품 구매정보*/
+
+section#right #summary h3{
+	font-size:16px;
+	padding-bottom: 8px;
+	border-bottom:solid 1px #444444;
+	}
+
+section#right summary h3 span{
+	color:#80a727;
+}
+
+section#right #summary1{
+	float: left;
+	margin-top: 20px;
+}
+
+section#right #summary1 .buttons{
+	text-align: center;
+	margin-top: 10px;
+}
+/*오른쪽 글자 이미지 순*/
+section#right #summary2{
+	width:400px;
+	float:right;
+	margin-top: 20px;
+	padding: 30px: 
+	margin-left:5%;
+}
+
+section#right #summary2 .item{
+	margin:20px 0 0 20px;
+	padding-bottom:10px;
+	border-bottom: solid 1px #cccccc;
+}
+section#right #summary2 .col1{
+	width: 100px;
+}
+
+section#right #summary2 .col2{
+	width: 200px;
+	
+	text-decoration: none;
+}
+
+section#right #summary2 .size{
+	margin:20px 0 0 20px;
+	padding-bottom: 10px;
+	border-bottom:solid 1px #cccccc;
+	text-decoration: none;
+}
+
+section#right #summary2 .size li{
+	margin:100px 0;
+	text-decoration: none;
+}
+
+section#right #summary2 .buttons li{
+	display: inline;
+	text-decoration: none;
+} 
+/*옵션영역*/
+
+section#explanation{
+	clear:both;
+	
+	
+}
