@@ -6,185 +6,267 @@
 	text-decoration: none;
 }
 
-body>.main{
-	display: block;
-	max-width: 1180px;
-	margin: 0 auto;
-}
+ body{
+    background-color: #EAEAEA;
+  }
 
-header{
-	text-align: center;
-	padding: 30px;
-	line-height: 50px;
-	vertical-align: middle;
-  background-color: #002187;
-}
+  body>.main{
+    display: block;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
 
-header .logo>a{
-  font-size: 3em;
-  font-family: serif;
-}
+  header{
+    text-align: center;
+    padding: 30px;
+    line-height: 50px;
+    vertical-align: middle;
+    background-color: #002187;
+  }
 
-header>.headerContainer{
-	width: 100%;
-	height: 50px;
-}
+  header .logo img{
+    width: 100px;
+    
+  }
 
-header .logo{
-	float: left;
-	width: 100px;
-}
+  header>.headerContainer{
+    width: 100%;
+    height: 50px;
+  }
 
-header .contryContainer{
-	display: inline-block;
-}
+  header .logo{
+    float: left;
+    width: 100px;
+  }
 
-header a{
-  color: white;
-  letter-spacing: 2px;
-}
+  header .contryContainer{
+    display: inline-block;
+  }
 
-header .login{
-	float: right;
-}
+  header a{
+    color: white;
+    letter-spacing: 2px;
+  }
 
-header .logo>img{
-	width: 100px;
-}
+  header .login{
+    float: right;
+  }
 
-.contryFlag{
-  width: 100%;
-  height: 200px;
-  background-color: #003399;
-}
-.contryFlag>img{
-  height: 200px;
-  float: left;
-}
+  header .logo>img{
+    width: 100px;
+  }
 
-.contryFlag>p{
-  text-align: center;
-  line-height: 200px;
-  color: white;
-  font-size: 3em;
-}
+  
+  .popup{
+    
+    position: absolute;
+    width: 10%;
+    height: 100px;
+    background-color: black;
 
-nav{
-  background-color: #555555;
-  position: fixed;
-  width: 100%;
-  top: -50px;
-  max-width: 1180px;
-  display: block;
-  z-index: 1;
-  transition: top 0.3s;
-}
 
-nav a{
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-}
+  }
 
-nav a:hover{
-  background: #ddd;
-  color: black;
-}
+  .logo img{
+    width:100px;
+    height: 50px;
+  }
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1180px;
-  position: relative;
-  margin: auto;
-}
+  .contryFlag{
+    width: 100%;
+    height: 200px;
+    background-color: #003399;
+  }
+  .contryFlag>img{
+    height: 200px;
+    float: left;
+  }
 
-/* Hide the images by default */
-.mySlides {
+  .contryFlag>p{
+    text-align: center;
+    line-height: 200px;
+    color: white;
+    font-size: 2em;
+  }
+
+  nav{
+    background-color: #555555;
+    position: fixed;
+    width: 100%;
+    top: -50px;
+    max-width: 1180px;
+    display: block;
+    z-index: 1;
+    transition: top 0.3s;
+  }
+
+  nav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+  nav a:hover{
+    background: #ddd;
+    color: black;
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1180px;
+    position: relative;
+    margin: auto;
+    background-color: white;
+
+  }
+
+  /* Hide the images by default */
+  .mySlides{
     display: none;
+  }
+
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  .dotContainer{
+    background-color: #003399;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  
+
+  footer{
+    background-color: #555555;
+    width: 100%;
+    height: 50px;
+    max-width: 1180px;
+    display: block;
+  }
+
+  footer>a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+  }
+
+@media(min-width: 768px){
+
+ header .login>#mobile{
+    display: none;
+  }
+
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+@media(max-width: 768px){
+  header #web{
+    display: none;
+  }
+
+  header #btnLogin, #btnJoin{
+    display: none;
+  }
+
+  header #mobile #user{
+    width: 50px;
+
+  }
+
+  .contryFlag>img{
+    float: none;
+    width: 100%;
+    line-height: 200px;
+  }
+
+  .contryFlag{
+    height: 400px;
+  }
+
+  #popup{
+    display: none;
+  }
+
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-#target{
-  width: 100%;
-}
