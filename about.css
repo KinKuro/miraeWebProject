@@ -93,7 +93,7 @@ footer{
 		font-size:32px;
 	}
 
-@media all and (max-width:785px){
+@media all and (max-width:800px){
 	ul,li{list-style:none; display:block;}
 	div#main{
 		min-width:600px
